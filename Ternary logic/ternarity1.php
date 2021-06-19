@@ -13,14 +13,17 @@ class T {
         if ($arg === 'FALSE') return false;
         if ($arg === 'NULL') return null;
         if ($arg === 'NONE') return null;
+        if ($arg === 'UNDEFINED') return null;
         if ($arg === 'True') return true;
         if ($arg === 'False') return false;
         if ($arg === 'Null') return null;
         if ($arg === 'None') return null;
+        if ($arg === 'Undefined') return null;
         if ($arg === 'true') return true;
         if ($arg === 'false') return false;
         if ($arg === 'null') return null;
         if ($arg === 'none') return null;
+        if ($arg === 'undefined') return null;
         if ($arg === 'N') return null;
         if ($arg === 'n') return null;
         if ($arg === 'T') return true;
@@ -352,5 +355,5 @@ class T {
 // ternarity( T::T3('T') );     # true
 // ternarity( T::T3(+123.45) ); # true
 // ternarity( T::T3('Text') );  # null
-// ternarity( T::XAND(T::NOT(true), T::BIN(null)) ); # true
+// ternarity( T::XAND( T::NOT(true), T::BIN(null) ) ); # true
 

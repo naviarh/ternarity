@@ -15,16 +15,19 @@ class T:
         if arg == -1: return False
         if arg == 'TRUE': return True
         if arg == 'FALSE': return False
-        if arg == 'NULL': return None
         if arg == 'NONE': return None
+        if arg == 'NULL': return None
+        if arg == 'UNDEFINED': return None
         if arg == 'True': return True
         if arg == 'False': return False
-        if arg == 'Null': return None
         if arg == 'None': return None
+        if arg == 'Null': return None
+        if arg == 'Undefined': return None
         if arg == 'true': return True
         if arg == 'false': return False
-        if arg == 'null': return None
         if arg == 'none': return None
+        if arg == 'null': return None
+        if arg == 'undefined': return None
         if arg == 'N': return None
         if arg == 'n': return None
         if arg == 'T': return True
@@ -356,7 +359,7 @@ class T:
 #ternarity( T.T('T') )       # True
 #ternarity( T.T(+123.45) )   # True
 #ternarity( T.T('Text') )    # None
-#ternarity( T.XAND(T.NOT(True), T.BIN(None)) ) # True
+#ternarity( T.XAND( T.NOT(True), T.BIN(None) ) ) # True
 
 #print(T(True))
 
